@@ -1,0 +1,69 @@
+.container{
+	background-color: lightgray;
+	margin: 3em;
+	display: grid;
+	
+	grid-template-areas:
+		". titleBlock titleBlock"
+		"menu content content"
+		". content content"
+		"closing closing closing";
+	grid-template-columns: 0.5fr 1fr 1fr;
+	grid-template-rows: auto 300px auto;
+	grid-column-gap: 10px;
+}
+.topHeader{
+	
+	background-color: red;
+	grid-area: titleBlock;
+	justify-self: start;
+}
+
+.leftNav{
+	background-color: tan;
+	grid-area: menu;
+}
+
+.rightMain{
+	background-color: blanchedalmond;
+	grid-area: content;
+}
+
+.bottomFooter{
+	grid-area: closing;
+	justify-self: center;
+	background-color: lightgreen;
+}
+#MemberForm {
+  display: grid;
+  grid-template-columns: 10em 20em;
+  padding: 1em;
+  grid-row-gap:1em;
+  grid-column-gap: 1em;
+  margin: 0.5em;
+  border: solid #55cedc;
+  border-radius: 15px;
+  max-width: 40em;
+  
+}
+#MemberForm label {
+  justify-self: end;
+  font-family: sans-serif;
+}
+#fig2, #fig1 {
+	border: solid;
+	border-color: red;
+	max-width: 370px;
+	float: left;
+}
+#imgSecond, #imgFirst {
+	width: 370px;
+	height: 400px;
+	position: center;
+}
+#par{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 60px;
+}
+
